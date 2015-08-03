@@ -54,9 +54,9 @@ namespace ContactManager
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "391365954382642",
+               appSecret: "f3e5a5149db50936b6407da51b7b92af");
 
             app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             {
