@@ -20,9 +20,9 @@ namespace ContactManager.Migrations
                 (new UserStore<ApplicationUser>(context));
             var user = new ApplicationUser()
             {
-                UserName = "user1@contoso.com",
+                UserName = "longhai@gmail.com",
             };
-            ir = um.Create(user, "user1@contoso.com");
+            ir = um.Create(user, "longhai@gmail.com");
             if (ir.Succeeded == false)
                 return ir.Succeeded;
             ir = um.AddToRole(user.Id, "canEdit");
