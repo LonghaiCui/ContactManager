@@ -374,6 +374,7 @@ namespace ContactManager.Controllers
                     result = await UserManager.AddLoginAsync(user.Id, info.Login);
                     if (result.Succeeded)
                     {
+                        //Note that this little commend will give the newly registered third party users "canEdit" Roles. See AspNetUserRoles table in Local Db
                         //await UserManager.AddToRoleAsync(user.Id, "canEdit");
                         await SignInManager.SignInAsync(user, isPersistent: false, rememberBrowser: false);
                         return RedirectToLocal(returnUrl);
