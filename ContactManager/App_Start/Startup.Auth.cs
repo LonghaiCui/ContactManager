@@ -58,11 +58,11 @@ namespace ContactManager
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "320865215115-2m3bjk4d8qpf6odmqo2ntbsi39jr3e50.apps.googleusercontent.com",
+                ClientSecret = "93vdoU3_k_x8RXguvOjgNnqW"
+            });
         }
     }
 }
